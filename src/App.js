@@ -1,25 +1,50 @@
-import logo from './logo.svg';
 import './App.css';
+import RightBox from './Components/RightBox'; 
+import LeftBoxTop from './Components/LeftBoxTop';
+import LeftBoxBottom from './Components/LeftBoxBottom';
+import React from 'react';
+import axios from 'axios';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+  constructor() {
+    super()
+
+    this.state ={
+      orderArray: []
+    }
+  }
+
+  updateOrderArray = () => {
+    axios.get('/api/order').then((res) => {
+      this.setState({orderArray: res.data})
+  }).catch((err) => {
+      console.log(err)
+  })
+  }
+
+  componentDidMount(){
+    this.updateOrderArray()
+}
+
+
+
+  render() {
+    return (
+      <div className="App">
+        <div className = "left">
+          <LeftBoxTop/>
+          <LeftBoxBottom orderArray = {this.state.orderArray} updateOrderArray={this.updateOrderArray}/>
+        </div>
+  
+        <div className = "right">
+          <RightBox updateOrderArray = {this.updateOrderArray}/>
+        </div>
+        
+      </div>
+    )
+  }
+  
 }
 
 export default App;

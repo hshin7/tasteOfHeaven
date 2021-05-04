@@ -1,38 +1,217 @@
-.App {
-  text-align: center;
+body{
+  background-color:darkseagreen;
+}
+.logo-button{
+  margin-top: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button:hover{
+  background-color: #e6e2d3;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.addToOrderButton{
+  width: 300px;
+  height: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.addToOrderButton:hover{
+  background-color: #618685;
+  width: 100px;
+}
+
+.leftbox{
   display: flex;
   flex-direction: column;
+  margin: 10px;
+}
+
+.reviewOrder{
+  margin-top: 50px;
+  padding-bottom: 450px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  background-color: aliceblue;
+
+}
+
+.left{
+ padding-left: 50px;
+ padding-right: 50px;
+ background-color: white;
+ 
+}
+
+hr{
+  border-width: 1px;
+  border-color: seagreen;
+  margin-top: 15px;
+}
+
+.right{
+  margin: 75px;
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type=text]{
+  border: 1px  solid black;
+  border-radius: 2px;
+}
+
+.logo{
+  margin-top: 20px;
+  width: 170px;
+  height: 170px;
+}
+
+.leftFood{
+  display: inline-block;
+  margin-left: 200px;;
+}
+
+.rightFood{
+  display: inline-block;
+  margin-left: 200px;
+}
+
+
+
+.foodName{
+  display: inline-flex;
+  margin: 30px;
+}
+
+
+.foodItem{
+  display: flex;
+  flex-direction: column ;
+}
+
+.food-button{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.foodList{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.types0{
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.types0change{
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.types0plus{
+  height: 20px;
+  width: 25px;
+}
+
+.types0minus{
+  height: 20px;
+  width: 25px;
+  margin-right: 5px;
+}
+
+.types1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.types1change{
+  display: inline-flex;
+  justify-content: space-evenly;
+align-items: center;
+}
+
+.types1plus{
+  height: 20px;
+  width: 25px;
+}
+
+.types1minus{
+  height: 20px;
+  width: 25px;
+  margin-right: 5px;
+}
+
+.types2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.types2change{
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.types2plus{
+  height: 20px;
+  width: 25px;
+}
+
+.types2minus{
+  height: 20px;
+  width: 25px;
+  margin-right: 5px;
+}
+
+.types3{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.types3change{
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.types3plus{
+  height: 20px;
+  width: 25px;
+}
+
+.types3minus{
+  height: 20px;
+  width: 25px;
+  margin-right: 5px;
+}
+
+
+.addToOrderButton{
+  height: 30px;
+  width: 100px;
+}
+
+.margin-right{
+  margin-right: 10px;
 }
