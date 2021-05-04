@@ -1,23 +1,31 @@
 body{
-  background-color:darkseagreen;
+  background-color: #B0BB98;
 }
 .logo-button{
   margin-top: 20px;
 }
 
 .button:hover{
-  background-color: #e6e2d3;
+  background-color: cornsilk;
   cursor: pointer;
 }
 
+.button{
+  border-radius: 12px;
+  border-width: 1px;
+}
 
 .addToOrderButton{
   width: 300px;
   height: 100px;
+  text-align: center;
+  margin-left: 30px; 
+  border-radius: 12px;
+  border-width: 1px;
 }
 
 .addToOrderButton:hover{
-  background-color: #618685;
+  background-color: seagreen;
   width: 100px;
 }
 
@@ -33,7 +41,7 @@ body{
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 15px;
-  background-color: aliceblue;
+  background-color:#F6D696;
 
 }
 
@@ -60,7 +68,7 @@ hr{
 }
 
 h1{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Pacifico', cursive;
 }
 
 .inputBox {
@@ -89,13 +97,65 @@ input[type=text]{
   margin-left: 200px;
 }
 
+.shrimpIcon{
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
 
+
+.cowIcon{
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.chickenIcon{
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+
+.veggieIcon{
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+}
+
+
+.Tacos{
+  background-color: white;
+  border-radius: 4%;
+}
+
+
+
+.Burritos{
+  background-color: white;
+  border-radius: 4%;
+}
+
+.Quesadilla{
+  background-color: white;
+  border-radius: 4%;
+}
+
+.Nachos{
+  background-color: white;
+  border-radius: 4%;
+}
 
 .foodName{
   display: inline-flex;
   margin: 30px;
 }
 
+.foodTypeBorder{
+  border: 1px solid black;
+  background-color: lightgray;
+  
+}
 
 .foodItem{
   display: flex;
@@ -118,6 +178,7 @@ input[type=text]{
   display: flex;
   flex-direction: row;
   align-items: center;
+  
 }
 
 .types0change{
@@ -129,35 +190,49 @@ input[type=text]{
 .types0plus{
   height: 20px;
   width: 25px;
+  background-color: darkseagreen;
+  border: 2px;
+  border-radius: 30%;
 }
 
 .types0minus{
   height: 20px;
   width: 25px;
   margin-right: 5px;
+  background-color: darkseagreen;
+  border: 2px;
+  border-radius: 30%;
 }
 
 .types1{
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 0;
 }
 
 .types1change{
   display: inline-flex;
   justify-content: space-evenly;
-align-items: center;
+  align-items: center;
+  
 }
 
 .types1plus{
   height: 20px;
   width: 25px;
+  background-color: darkseagreen;
+  border: 2px;
+  border-radius: 30%;
 }
 
 .types1minus{
   height: 20px;
   width: 25px;
   margin-right: 5px;
+  background-color: darkseagreen;
+  border: 2px;
+  border-radius: 30%;
 }
 
 .types2{
@@ -175,12 +250,18 @@ align-items: center;
 .types2plus{
   height: 20px;
   width: 25px;
+  background-color: darkseagreen;
+  border: 2px;
+  border-radius: 30%;
 }
 
 .types2minus{
   height: 20px;
   width: 25px;
   margin-right: 5px;
+  background-color: darkseagreen;
+  border: 2px;
+  border-radius: 30%;
 }
 
 .types3{
@@ -198,12 +279,18 @@ align-items: center;
 .types3plus{
   height: 20px;
   width: 25px;
+  background-color: darkseagreen;
+  border: 2px;
+  border-radius: 30%;
 }
 
 .types3minus{
   height: 20px;
   width: 25px;
   margin-right: 5px;
+  background-color: darkseagreen;
+  border: 2px;
+  border-radius: 30%;
 }
 
 

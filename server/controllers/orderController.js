@@ -33,7 +33,6 @@ module.exports = {
         for(let i = 0; i < order.length; i++) {
             if(order[i].id === parseInt(id)) index = i
         }
-        console.log(food)
         order[index] = food
         res.status(200).send(order) 
     },

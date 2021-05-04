@@ -13,10 +13,12 @@ class Order extends Component {
         return (
             <div>
                 <div className = 'leftFood'>
-                     <div className = 'Tacos'>
+                    
+                    <div className = 'Tacos'>
                         <Food updateOrderArray={this.props.updateOrderArray} foodType = 'Tacos' typesOf = {['shrimp', 'steak', 'chicken', 'veggie']} price = {[4.50, 2.50, 2.00, 1.50]}/> 
                     </div>
                   
+                    <br/>
                     
                     <div className = 'Burritos'>
                         <Food updateOrderArray={this.props.updateOrderArray} foodType = 'Burritos' typesOf = {['shrimp', 'steak', 'chicken', 'veggie']} price = {[9.00, 8.00, 7.00, 6.50]}/>
@@ -27,6 +29,9 @@ class Order extends Component {
                     <div className = 'Quesadilla'>
                         <Food updateOrderArray={this.props.updateOrderArray} foodType = 'Quesadilla' typesOf = {['shrimp', 'steak', 'chicken', 'veggie']} price = {[5.00, 6.50,6.00, 5.50]}/>
                     </div>
+
+                    <br/>
+
                     <div className = 'Nachos'>
                         <Food updateOrderArray={this.props.updateOrderArray} foodType = 'Nachos' typesOf = {['shrimp', 'steak', 'chicken', 'veggie']} price = {[5.00,7.00, 8.00,6.00]} />
                     </div>
