@@ -5,7 +5,7 @@ import react, {Component} from 'react';
 class Food extends Component {
     constructor(){
         super()
-
+        
         this.state = {
             foodQty1: 0,
             foodQty2: 0,
